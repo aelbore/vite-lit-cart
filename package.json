@@ -1,0 +1,40 @@
+{
+  "name": "vite-lit-cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vite",
+    "build": "qoi build --minify literals --resolve --emptyOutDir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelbore/vite-lit-cart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aelbore/vite-lit-cart/issues"
+  },
+  "homepage": "https://github.com/aelbore/vite-lit-cart#readme",
+  "devDependencies": {
+    "@qoi/build": "^0.2.2",
+    "@qoi/cli": "^0.2.2",
+    "@qoi/types": "^0.0.8",
+    "@rollup/pluginutils": "^4.2.1",
+    "happy-dom": "^6.0.4",
+    "lit": "^2.3.1",
+    "magic-string": "^0.26.5",
+    "minify-html-literals": "^1.3.5",
+    "navigo": "^8.11.1",
+    "rollup-plugin-lit-element": "^0.1.0",
+    "sass": "^1.55.0",
+    "tsconfig-paths": "^4.1.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4",
+    "usignal": "^0.8.0",
+    "vite": "^3.1.4",
+    "vitest": "^0.23.4"
+  }
+}
