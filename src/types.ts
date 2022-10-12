@@ -22,17 +22,6 @@ export interface RemoveItem {
   removeFromCart(cart: Cart): EventCart
 }
 
-export interface Dispatch {
-  <T>(type?: string, payload?: T): void
-}
-
-export interface ShopStore {
-  products: Signal<Product[]>
-  carts: Signal<Cart[]>
-  cartQty: Signal<number>
-  dispatch: Dispatch
-}
-
 export interface ProductsProps extends AddToCart {
   products?: Product[]
 }
