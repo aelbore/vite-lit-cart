@@ -6,7 +6,7 @@ import { Product } from '../types'
 import store from '../store'
 
 const addToCart = (product: Product) => {
-  return () => store.dispatch('addToCart', product)
+  return () => store.addToCart(product)
 }
 
 export function Products() {

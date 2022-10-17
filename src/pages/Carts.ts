@@ -6,7 +6,7 @@ import { Cart } from '../types'
 import store from '../store'
 
 const removeFromCart = (cart: Cart) => {
-  return () => store.dispatch('removeFromCart', cart)
+  return () => store.removeFromCart(cart)
 }
 
 export function Carts() {

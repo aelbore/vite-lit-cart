@@ -32,7 +32,7 @@ export default createStore({
     }
   },
   actions: {
-    addToCart(state: State, product: Product) {
+    addToCart({ state }, product: Product) {
       const index = state.carts.value.findIndex(cart => cart.id === product.id)
       const states = [ ...state.carts.value ]
       if (index !== -1) {
@@ -42,7 +42,7 @@ export default createStore({
       }
       state.carts.value = [ ...states ]
     },
-    removeFromCart(state: State, cart: Cart) {
+    removeFromCart({ state }, cart: Cart) {
       const states = [ ...state.carts.value ]
       const index = state.carts.value.findIndex(c => c.id === cart.id)
       if (index !== -1) {
