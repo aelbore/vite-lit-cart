@@ -3,7 +3,7 @@ import { html } from 'lit'
 import { Product as ProductItem } from '../pages/Product'
 import { Product } from '../types'
 
-import store from '../store'
+import store from '@/store'
 
 const addToCart = (product: Product) => {
   return () => store.addToCart(product)

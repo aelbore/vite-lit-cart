@@ -16,6 +16,9 @@
       "ES2019",
       "DOM"
     ],
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
+    "paths": {
+      "@/store": [ "./src/store.ts" ]
+    }
   }
 }

@@ -1,4 +1,4 @@
-import { defineConfig } from '@qoi/build'
+import { defineConfig } from 'qoi-cli'
 import { Lit } from 'rollup-plugin-lit-element'
 
 export default defineConfig({
@@ -6,5 +6,5 @@ export default defineConfig({
   swc: {
     jsc: { target: 'es2022' }
   },
-  plugins: [ Lit() ]
+  plugins: [ Lit() as [] ]
 })
